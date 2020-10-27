@@ -1,0 +1,32 @@
+<Ui>
+    <Script file="ExtraActionButton.lua"/>
+
+    <Frame name="nMainbar_ExtraActionButtonAnchor" parent="UIParent" frameStrata="HIGH" clampedToScreen="true" movable="true" hidden="true" enableMouse="true" mixin="nMainbar_ExtraActionButton">
+        <Size x="50" y="50"/>
+        <Anchors>
+            <Anchor point="CENTER" x="-300" y="-150"/>
+        </Anchors>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentBackground" parentKey="bg">
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="2" y="2"/>
+                        <Anchor point="BOTTOMLEFT" x="-2" y="-2"/>
+                    </Anchors>
+                    <Color r="0" g="0" b="0" a=".80"/>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+                <FontString name="$parentLabel" parentKey="Label" inherits="GameFontHighlightSmall" setAllPoints="true" text="BINDING_NAME_EXTRAACTIONBUTTON1">
+                    <Color r="1.0" g="1.0" b="1.0"/>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEvent method="OnEvent"/>
+            <OnDragStart method="OnDragStart"/>
+            <OnDragStop method="OnDragStop"/>
+        </Scripts>
+    </Frame>
+</Ui>

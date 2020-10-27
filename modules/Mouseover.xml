@@ -1,0 +1,12 @@
+<Ui>
+    <Script file="Mouseover.lua"/>
+
+    <Frame name="nMainbar_MouseoverTemplate" virtual="true" frameStrata="LOW" frameLevel="1" enableMouse="true" mixin="nMainbarMouseoverMixin">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnShow method="OnShow"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+    </Frame>
+</Ui>

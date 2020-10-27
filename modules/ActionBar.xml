@@ -1,0 +1,126 @@
+<Ui>
+	<Script file="ActionBarSkin.lua"/>
+    <Script file="ActionBar.lua"/>
+
+    <Frame name="nMainbarActionBar" parent="MultiBarBottomLeft" toplevel="true" frameStrata="MEDIUM" hidden="false" mixin="nMainbarActionBarMixin">
+		<Size x="500" y="38"/>
+        <Anchors>
+            <Anchor point="BOTTOMLEFT" relativeTo="MultiBarBottomLeftButton1" relativePoint="TOPLEFT" y="6"/>
+            <Anchor point="BOTTOMRIGHT" relativeTo="MultiBarBottomLeftButton12" relativePoint="TOPRIGHT" y="0"/>
+        </Anchors>
+		<Attributes>
+			<Attribute name="actionpage" type="number" value="5"/>
+		</Attributes>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="QuickKeybindGlow" atlas="QuickKeybind_TopLeftBar_Glow" useAtlasSize="true" hidden="true">
+					<Anchors>
+						<Anchor point="CENTER" relativePoint="CENTER" x="-1"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<CheckButton name="$parentButton1" inherits="MultiBar2ButtonTemplate" id="1">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON1" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton2" inherits="MultiBar2ButtonTemplate" id="2">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON2" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton1" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton3" inherits="MultiBar2ButtonTemplate" id="3">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON3" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton2" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton4" inherits="MultiBar2ButtonTemplate" id="4">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON4" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton3" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton5" inherits="MultiBar2ButtonTemplate" id="5">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON5" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton4" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton6" inherits="MultiBar2ButtonTemplate" id="6">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON6" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton5" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton7" inherits="MultiBar2ButtonTemplate" id="7">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON7" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton6" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton8" inherits="MultiBar2ButtonTemplate" id="8">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON8" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton7" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton9" inherits="MultiBar2ButtonTemplate" id="9">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON9" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton8" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton10" inherits="MultiBar2ButtonTemplate" id="10">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON10" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton9" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton11" inherits="MultiBar2ButtonTemplate" id="11">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON11" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton10" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton12" inherits="MultiBar2ButtonTemplate" id="12">
+				<KeyValues>
+					<KeyValue key="commandName" value="MULTIACTIONBAR2BUTTON12" type="string"/>
+				</KeyValues>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parentButton11" relativePoint="RIGHT" x="6" y="0"/>
+				</Anchors>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEvent method="OnEvent"/>
+        </Scripts>
+	</Frame>
+</Ui>

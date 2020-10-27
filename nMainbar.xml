@@ -1,0 +1,27 @@
+<Ui>
+    <!--
+        Config files.
+    -->
+    <Script file="Config.lua"/>
+    <Script file="Utils.lua"/>
+
+    <!--
+        Module files.
+    -->
+    <Script file="modules\Core.lua"/>
+    <Script file="modules\Masque.lua"/>
+    <Script file="modules\Watchbars.lua"/>
+
+    <Include file="modules\ActionBar.xml"/>
+    <Include file="modules\Bags.xml"/>
+    <Include file="modules\ExtraActionButton.xml"/>
+    <Include file="modules\Mouseover.xml"/>
+    <Include file="modules\PicoMenu.xml"/>
+
+    <Frame name="nMainbarEventHandler" mixin="nMainbarMixin">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEvent method="OnEvent"/>
+        </Scripts>
+    </Frame>
+</Ui>

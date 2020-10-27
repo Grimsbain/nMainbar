@@ -1,0 +1,21 @@
+<Ui>
+    <Script file="PicoMenu.lua"/>
+
+    <DropDownToggleButton name="nMainbarPicoMenu" parent="MainMenuBar" frameLevel="3" mixin="nMainbarPicoMenuMixin">
+        <Size x="30" y="30"/>
+        <Frames>
+			<Frame parentKey="DropDown" inherits="UIDropDownMenuTemplate" clampedToScreen="true" hidden="true"/>
+		</Frames>
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEvent method="OnEvent"/>
+            <OnMouseDown method="OnMouseDown"/>
+            <OnMouseUp method="OnMouseUp"/>
+            <OnEnter method="OnEnter"/>
+            <OnLeave method="OnLeave"/>
+        </Scripts>
+        <NormalTexture parentKey="normalTexture" file="Interface\AddOns\nMainbar\Media\picomenu\picomenuNormal"/>
+        <HighlightTexture parentKey="hightlightTexture" file="Interface\AddOns\nMainbar\Media\picomenu\picomenuHighlight" alphaMode="ADD"/>
+        <DisabledTexture parentKey="disabledTexture" file="Interface\AddOns\nMainbar\Media\picomenu\picomenuDisable"/>
+    </DropDownToggleButton>
+</Ui>

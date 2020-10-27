@@ -1,0 +1,8 @@
+## Interface: 90001
+## Title: |cffCC3333 n|rMainbar
+## SavedVariables: BagsShown
+
+LibStub.lua
+SharedFonts.xml
+nMainbar.xml
+Bindings.xml

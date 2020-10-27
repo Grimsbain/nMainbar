@@ -1,0 +1,10 @@
+<Ui>
+    <Script file="Bags.lua"/>
+
+    <Frame name="nMainbarBags" mixin="nMainbarBagsMixin">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnEvent method="OnEvent"/>
+        </Scripts>
+    </Frame>
+</Ui>
