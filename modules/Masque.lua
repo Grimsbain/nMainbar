@@ -6,7 +6,7 @@ if ( not cfg.button.useMasque ) then
 end
 
 local Masque = LibStub("Masque", true)
-local MasqueGroup = Masque and Masque:Group('nMainbar', 'ActionBars')
+local MasqueGroup = Masque and Masque:Group("nMainbar", "ActionBars")
 
 for _, button in pairs(ActionBarButtonEventsFrame.frames) do
     MasqueGroup:AddButton(button)
